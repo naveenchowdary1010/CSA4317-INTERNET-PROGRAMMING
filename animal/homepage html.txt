@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Veterinary Care</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Online Veterinary Care</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="admin-section">
+      <h2>Admin Dashboard</h2>
+      <h3>Manage Doctors</h3>
+      <ul>
+        </ul>
+      <h3>Add Doctor</h3>
+<section id="register">
+<div class="container">
+ <form  action ="register.php" method ="post" onsubmit="return validate_form();">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="userName">User Name:</label>
+        <input type="text" id="userName" name="userName" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="retypePassword">Retype Password:</label>
+        <input type="password" id="retypePassword" name="retypePassword" required><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone No:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label>petowned:</label>
+        <input type="petowned" id="email" name ="petowned" required><br><br>
+
+        <label for="city">City:</label>
+        <select id="city" name="city">
+            <option value="Chennai">Chennai</option>
+            <!-- Add more options as needed -->
+            <option value="Mumbai">Chennai</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+</center>
+    </form>
+
+        </form>
+    </section>
+
+    <section class="doctor-section">
+      <h2>Doctor Dashboard</h2>
+      <h3>Appointments</h3>
+      <table>
+        </table>
+      <h3>Patient Records</h3>
+      <ul>
+        </ul>
+    </section>
+      <h2>User Dashboard</h2>
+      <h3>Book Appointment</h3>
+      <form action="book_appointment.php" method="post">
+<section id="login">
+<div class="container">
+<form action="login.php" method="post">
+<label>User Name : </label>
+<input type="text" name="userName"><br><br>
+<label>Password : </label>
+<input type="text" name="password"><br><br>
+<input type="submit" value="Submit">
+</form>
+<center><h3><a href="#top">GO TO TOP</a></h3></center>
+</div>
+</section>
+
+        </form>
+      <h3>My Pets</h3>
+      <ul>
+        </ul>
+      <h3>Medical Records</h3>
+      <ul>
+        </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2023 Online Veterinary Care</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
